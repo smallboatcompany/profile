@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ========== SEO: عدّل هذه القيم إذا لزم ========== -->
+<title>شركة القارب الصغير | Small Boat Co. – الرياض، السعودية</title>
+<meta name="description" content="شركة القارب الصغير (Small Boat.co) – أكثر من 37 عامًا من الريادة في قطاع الأزياء وتجارة التجزئة بالمملكة العربية السعودية، مالكة العلامة النسائية ICE CUBE، والمشغّل الرسمي لعلامة Jack & Jones العالمية في السعودية والخليج، عبر شبكة تضم نحو 50 فرعًا.">
+<meta name="keywords" content="شركة القارب الصغير, Small Boat, ICE CUBE, جاك اند جونز السعودية, Jack and Jones Saudi Arabia, تجارة تجزئة الرياض, أزياء رجالية السعودية">
+<meta name="robots" content="index, follow">
+<meta name="author" content="شركة القارب الصغير">
+<link rel="canonical" href="https://smallboatcompany.github.io/profile/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="شركة القارب الصغير | Small Boat Co.">
+<meta property="og:description" content="أكثر من 37 عامًا من الريادة في قطاع الأزياء وتجارة التجزئة بالمملكة العربية السعودية. مالكة ICE CUBE ومشغّل Jack & Jones في السعودية والخليج.">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:url" content="https://smallboatcompany.github.io/profile/">
+<meta property="og:image" content="https://smallboatcompany.github.io/profile/og-image.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="شركة القارب الصغير | Small Boat Co.">
+<meta name="twitter:description" content="أكثر من 37 عامًا من الريادة في قطاع الأزياء وتجارة التجزئة بالمملكة العربية السعودية.">
+
+<!-- Structured Data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "شركة القارب الصغير",
+  "alternateName": "Small Boat Co.",
+  "url": "https://smallboatcompany.github.io/profile/",
+  "logo": "https://smallboatcompany.github.io/profile/logo.png",
+  "foundingLocation": "الرياض، المملكة العربية السعودية",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "الرياض",
+    "addressCountry": "SA"
+  },
+  "sameAs": [],
+  "brand": [
+    { "@type": "Brand", "name": "ICE CUBE" },
+    { "@type": "Brand", "name": "Jack & Jones" }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#1E2233;
+    --navy:#16233F;
+    --paper:#F6F3EC;
+    --paper-2:#EFEADD;
+    --brass:#B08D57;
+    --brass-light:#D9BD8B;
+    --denim:#33456B;
+    --line:#D8D0BE;
+    --white:#FFFFFF;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans Arabic', sans-serif;
+    line-height:1.75;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4,.brand{
+    font-family:'Cairo', sans-serif;
+    color:var(--navy);
+  }
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 28px;}
+
+  /* stitched divider — denim-seam motif */
+  .stitch{
+    height:0;
+    border-top:2px dashed var(--brass);
+    opacity:.55;
+    margin:0 auto;
+    width:100%;
+  }
+  .stitch.short{width:64px; border-top-width:3px; opacity:1; margin:22px auto;}
+
+  /* ===== Header ===== */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(246,243,236,.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 28px; max-width:1180px; margin:0 auto;
+  }
+  .logo{
+    font-family:'Cairo', sans-serif; font-weight:800; font-size:1.15rem;
+    color:var(--navy); letter-spacing:.3px;
+  }
+  .logo span{color:var(--brass);}
+  nav ul{list-style:none; display:flex; gap:32px;}
+  nav ul li a{
+    font-weight:600; font-size:.95rem; color:var(--navy);
+    position:relative; padding-bottom:4px;
+  }
+  nav ul li a::after{
+    content:''; position:absolute; right:0; bottom:0; width:0; height:2px;
+    background:var(--brass); transition:width .25s ease;
+  }
+  nav ul li a:hover::after{width:100%;}
+  .nav-cta{
+    background:var(--navy); color:var(--paper) !important;
+    padding:10px 22px; border-radius:999px; font-weight:700; font-size:.9rem;
+  }
+  .burger{display:none; font-size:1.6rem; background:none; border:none; color:var(--navy); cursor:pointer;}
+
+  @media(max-width:820px){
+    nav ul{
+      position:fixed; inset:64px 0 auto 0; background:var(--paper);
+      flex-direction:column; align-items:flex-start; gap:0;
+      border-bottom:1px solid var(--line);
+      transform:translateY(-120%); transition:transform .3s ease;
+      padding:8px 28px 20px;
+    }
+    nav ul.open{transform:translateY(0);}
+    nav ul li{width:100%; padding:12px 0; border-bottom:1px solid var(--line);}
+    .nav-cta{display:none;}
+    .burger{display:block;}
+  }
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative;
+    padding:96px 0 70px;
+    background:
+      radial-gradient(1100px 480px at 85% -10%, rgba(176,141,87,.16), transparent 60%),
+      var(--paper);
+    overflow:hidden;
+  }
+  .hero .wrap{
+    display:grid; grid-template-columns:1.1fr .7fr; gap:56px; align-items:center;
+  }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:10px;
+    font-weight:700; font-size:.85rem; color:var(--brass);
+    letter-spacing:.5px; margin-bottom:18px;
+  }
+  .eyebrow::before{content:''; width:26px; height:2px; background:var(--brass);}
+  .hero h1{
+    font-size:clamp(2.1rem, 4vw, 3.15rem);
+    font-weight:900; line-height:1.28; margin-bottom:22px;
+  }
+  .hero h1 em{
+    font-style:normal; color:var(--brass);
+  }
+  .hero p.lead{
+    font-size:1.08rem; color:#4B5266; max-width:56ch; margin-bottom:34px;
+  }
+  .hero-actions{display:flex; gap:16px; flex-wrap:wrap;}
+  .btn{
+    display:inline-block; padding:14px 30px; border-radius:999px;
+    font-weight:700; font-size:.95rem; transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .btn-primary{background:var(--navy); color:var(--paper);}
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 10px 24px rgba(22,35,63,.25);}
+  .btn-ghost{border:1.5px solid var(--navy); color:var(--navy);}
+  .btn-ghost:hover{background:var(--navy); color:var(--paper);}
+
+  .hero-figure{
+    position:relative; background:var(--navy); border-radius:22px;
+    padding:38px 30px; color:var(--paper);
+    box-shadow:0 30px 60px -20px rgba(22,35,63,.45);
+  }
+  .hero-figure .big{
+    font-family:'Cairo', sans-serif; font-weight:900; font-size:4.6rem; line-height:1;
+    color:var(--brass-light);
+  }
+  .hero-figure .cap{font-size:.95rem; opacity:.85; margin-top:6px;}
+  .hero-figure .mini-stats{
+    margin-top:26px; padding-top:22px; border-top:1px dashed rgba(255,255,255,.25);
+    display:grid; grid-template-columns:1fr 1fr; gap:18px;
+  }
+  .hero-figure .mini-stats div b{display:block; font-family:'Cairo'; font-size:1.5rem; color:var(--brass-light);}
+  .hero-figure .mini-stats div span{font-size:.82rem; opacity:.8;}
+
+  @media(max-width:900px){
+    .hero .wrap{grid-template-columns:1fr;}
+  }
+
+  /* ===== Stats bar ===== */
+  .statbar{
+    background:var(--navy); color:var(--paper); padding:34px 0;
+  }
+  .statbar .wrap{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:20px; text-align:center;
+  }
+  .statbar b{display:block; font-family:'Cairo'; font-size:2rem; color:var(--brass-light);}
+  .statbar span{font-size:.85rem; opacity:.85;}
+  @media(max-width:700px){.statbar .wrap{grid-template-columns:1fr 1fr;}}
+
+  /* ===== Section generic ===== */
+  section{padding:88px 0;}
+  .section-head{max-width:640px; margin-bottom:52px;}
+  .section-head .eyebrow{margin-bottom:14px;}
+  .section-head h2{font-size:clamp(1.6rem,2.6vw,2.3rem); font-weight:800; line-height:1.35;}
+  .section-head p{color:#5A5F70; margin-top:14px; font-size:1rem;}
+
+  /* ===== About ===== */
+  .about-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start;
+  }
+  .about-grid p{color:#40465A; margin-bottom:16px;}
+  .card-soft{
+    background:var(--white); border:1px solid var(--line); border-radius:18px;
+    padding:30px; margin-bottom:20px;
+  }
+  .card-soft h3{font-size:1.1rem; margin-bottom:10px; display:flex; align-items:center; gap:10px;}
+  .card-soft h3::before{
+    content:''; width:8px; height:8px; border-radius:50%; background:var(--brass);
+  }
+  .card-soft p{color:#565C6E; font-size:.96rem; margin:0;}
+  @media(max-width:820px){.about-grid{grid-template-columns:1fr;}}
+
+  /* ===== Values ===== */
+  .values-grid{
+    display:grid; grid-template-columns:repeat(5,1fr); gap:18px;
+  }
+  .value{
+    background:var(--white); border:1px solid var(--line); border-radius:16px;
+    padding:26px 20px; text-align:right;
+  }
+  .value .num{
+    font-family:'Cairo'; font-weight:900; color:var(--brass); font-size:1.1rem; margin-bottom:10px; display:block;
+  }
+  .value h4{font-size:1rem; margin-bottom:8px;}
+  .value p{font-size:.86rem; color:#5A5F70;}
+  @media(max-width:980px){.values-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.values-grid{grid-template-columns:1fr;}}
+
+  /* ===== Brands ===== */
+  .brands{background:var(--paper-2);}
+  .brand-grid{display:grid; grid-template-columns:1fr 1fr; gap:26px;}
+  .brand-card{
+    background:var(--white); border-radius:20px; overflow:hidden;
+    border:1px solid var(--line);
+    display:flex; flex-direction:column;
+  }
+  .brand-card .top{
+    padding:34px 30px 22px; border-bottom:1px dashed var(--line);
+  }
+  .brand-card .brand{font-size:1.5rem; font-weight:800;}
+  .brand-card .tag{font-size:.82rem; color:var(--brass); font-weight:700; margin-top:4px; display:block;}
+  .brand-card .body{padding:22px 30px 30px; color:#4B5266; font-size:.95rem; flex:1;}
+  .brand-card .body ul{margin-top:14px; padding-right:18px;}
+  .brand-card .body li{margin-bottom:6px; font-size:.92rem;}
+  @media(max-width:820px){.brand-grid{grid-template-columns:1fr;}}
+
+  /* ===== Timeline / Vision2030 ===== */
+  .vision-block{
+    background:var(--navy); color:var(--paper); border-radius:26px;
+    padding:56px 46px; display:grid; grid-template-columns:.9fr 1.1fr; gap:44px; align-items:center;
+  }
+  .vision-block h2{color:var(--paper); font-size:1.7rem; margin-bottom:16px;}
+  .vision-block p{color:#C9CEDC; font-size:.98rem;}
+  .vision-badge{
+    width:150px; height:150px; border-radius:50%; border:2px dashed var(--brass-light);
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    font-family:'Cairo'; font-weight:800; color:var(--brass-light); font-size:1.15rem; line-height:1.3;
+    margin:0 auto;
+  }
+  @media(max-width:820px){.vision-block{grid-template-columns:1fr; padding:40px 26px;}}
+
+  /* ===== Contact ===== */
+  .contact-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:50px;
+  }
+  .contact-card{
+    background:var(--white); border:1px solid var(--line); border-radius:18px; padding:30px;
+  }
+  .contact-card h3{font-size:1rem; margin-bottom:6px;}
+  .contact-card p{color:#5A5F70; font-size:.92rem;}
+  .field-note{
+    display:inline-block; margin-top:8px; font-size:.78rem; color:var(--brass);
+    background:rgba(176,141,87,.12); padding:4px 10px; border-radius:6px;
+  }
+  form{display:grid; gap:14px;}
+  form input, form textarea{
+    width:100%; padding:14px 16px; border-radius:10px; border:1px solid var(--line);
+    background:var(--white); font-family:inherit; font-size:.95rem; color:var(--ink);
+  }
+  form button{
+    justify-self:start; border:none; cursor:pointer;
+    background:var(--navy); color:var(--paper);
+    padding:14px 30px; border-radius:999px; font-weight:700; font-size:.95rem;
+  }
+  @media(max-width:820px){.contact-grid{grid-template-columns:1fr;}}
+
+  /* ===== Footer ===== */
+  footer{
+    background:var(--navy); color:#AEB4C4; padding:44px 0 26px; margin-top:40px;
+  }
+  footer .wrap{
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px;
+    border-bottom:1px solid rgba(255,255,255,.12); padding-bottom:24px;
+  }
+  footer .brand{color:var(--paper); font-size:1.1rem;}
+  footer .cols{display:flex; gap:60px; flex-wrap:wrap;}
+  footer .cols div h5{color:var(--paper); font-size:.88rem; margin-bottom:10px;}
+  footer .cols div a{display:block; font-size:.85rem; margin-bottom:6px; color:#AEB4C4;}
+  footer .bottom{
+    max-width:1180px; margin:20px auto 0; padding:0 28px;
+    font-size:.78rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">القارب الصغير <span>Small Boat</span></div>
+    <button class="burger" id="burgerBtn" aria-label="فتح القائمة">&#9776;</button>
+    <ul id="navList">
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#about">من نحن</a></li>
+      <li><a href="#values">قيمنا</a></li>
+      <li><a href="#brands">علاماتنا التجارية</a></li>
+      <li><a href="#vision">رؤية 2030</a></li>
+      <li><a href="#contact" class="nav-cta">تواصل معنا</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">تأسست في الرياض</div>
+      <h1>أكثر من ٣٧ عامًا من <em>الريادة</em> في قطاع الأزياء وتجارة التجزئة بالمملكة</h1>
+      <p class="lead">شركة القارب الصغير Small Boat.co مؤسسة سعودية رائدة، تدير شبكة تضم نحو 50 فرعًا في المملكة العربية السعودية ودول الخليج، وتجمع بين علامة نسائية مملوكة وعلامة عالمية مُدارة بالترخيص.</p>
+      <div class="hero-actions">
+        <a href="#brands" class="btn btn-primary">علاماتنا التجارية</a>
+        <a href="#contact" class="btn btn-ghost">تواصل معنا</a>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <div class="big">37+</div>
+      <div class="cap">عامًا من الخبرة في تجارة التجزئة السعودية</div>
+      <div class="mini-stats">
+        <div><b>50+</b><span>فرعًا في السعودية والخليج</span></div>
+        <div><b>2</b><span>علامتان تجاريتان</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="statbar">
+  <div class="wrap">
+    <div><b>1</b><span>علامة مملوكة – ICE CUBE</span></div>
+    <div><b>1</b><span>علامة مُدارة بالترخيص – Jack & Jones</span></div>
+    <div><b>50+</b><span>فرعًا منتشرًا إقليميًا</span></div>
+    <div><b>2030</b><span>مواءمة مباشرة مع رؤية المملكة</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">من نحن</div>
+      <h2>مسيرة راسخة في تجارة التجزئة والأزياء السعودية</h2>
+      <p>منذ أكثر من 37 عامًا، بنت شركة القارب الصغير مكانة قوية وسمعة راسخة في قطاع تجارة التجزئة السعودي، من خلال تقديم علامات تجارية متميزة وتجارب تسوق عالية الجودة تلبي احتياجات السوق.</p>
+    </div>
+
+    <div class="about-grid">
+      <div>
+        <p>تمتلك الشركة العلامة التجارية النسائية <strong>ICE CUBE</strong>، كما تحظى بحقوق تشغيل وإدارة علامة <strong>Jack & Jones</strong> العالمية للملابس الرجالية في المملكة العربية السعودية، وهو ما يعكس ثقة كبرى العلامات التجارية العالمية بخبراتها وإمكاناتها التشغيلية.</p>
+        <p>وبفضل شبكة واسعة من العلاقات التجارية والخبرات المتراكمة، تدير الشركة منظومة تضم ما يقارب 50 فرعًا منتشرة في مختلف مناطق المملكة ودول الخليج، بما يعزز حضورها القوي ويمنحها حصة مؤثرة في سوق الأزياء وتجارة التجزئة.</p>
+        <p>تستند مسيرة الشركة إلى قيم الجودة والاحترافية والابتكار، مع التزام مستمر بتقديم أفضل المنتجات والخدمات لعملائها، والمساهمة في تطوير قطاع التجزئة السعودي بما يتماشى مع رؤية المملكة 2030.</p>
+      </div>
+      <div>
+        <div class="card-soft">
+          <h3>رؤيتنا</h3>
+          <p>أن نكون الشركة الرائدة في قطاع الأزياء وتجارة التجزئة في المملكة العربية السعودية، من خلال تقديم علامات تجارية متميزة وتجارب تسوق استثنائية تجمع بين الجودة والابتكار، بما يعزز مكانتنا كشريك موثوق للعملاء والعلامات التجارية العالمية.</p>
+        </div>
+        <div class="card-soft">
+          <h3>رسالتنا</h3>
+          <p>نلتزم بتوفير منتجات عصرية عالية الجودة تلبي تطلعات عملائنا، وتقديم تجربة تسوق متكاملة عبر شبكة فروعنا ومنصاتنا الرقمية، مع التركيز على الابتكار والتميز التشغيلي وبناء علاقات طويلة الأمد مع شركائنا وعملائنا.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="stitch"></div></div>
+
+<section id="values">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">قيمنا</div>
+      <h2>المبادئ التي تقود عملنا كل يوم</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value"><span class="num">01</span><h4>الجودة</h4><p>نحرص على تقديم أفضل المنتجات والخدمات وفق أعلى المعايير.</p></div>
+      <div class="value"><span class="num">02</span><h4>الاحترافية</h4><p>نؤمن بأن النجاح يبدأ بالالتزام والتميز في الأداء.</p></div>
+      <div class="value"><span class="num">03</span><h4>الابتكار</h4><p>نسعى باستمرار لتطوير تجربة التسوق ومواكبة أحدث الاتجاهات العالمية.</p></div>
+      <div class="value"><span class="num">04</span><h4>الثقة</h4><p>نبني علاقات مستدامة مع عملائنا وشركائنا قائمة على المصداقية والشفافية.</p></div>
+      <div class="value"><span class="num">05</span><h4>التركيز على العميل</h4><p>نضع احتياجات عملائنا في صميم كل قرار نتخذه.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="brands" id="brands">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">علاماتنا التجارية</div>
+      <h2>محفظة علامات تجمع بين الملكية والشراكة العالمية</h2>
+      <p>علامة نسائية نطورها بأنفسنا، وعلامة عالمية ندير تشغيلها بثقة كاملة من مالكيها.</p>
+    </div>
+    <div class="brand-grid">
+      <div class="brand-card">
+        <div class="top">
+          <div class="brand">ICE CUBE</div>
+          <span class="tag">علامة مملوكة · أزياء نسائية</span>
+        </div>
+        <div class="body">
+          علامة تجارية نسائية سعودية مملوكة بالكامل لشركة القارب الصغير، تقدّم تشكيلات عصرية تواكب أحدث صيحات الموضة النسائية في السوق السعودي والخليجي.
+          <ul>
+            <li>تصميم وتطوير داخلي كامل للتشكيلات</li>
+            <li>حضور واسع ضمن شبكة فروع الشركة</li>
+          </ul>
+        </div>
+      </div>
+      <div class="brand-card">
+        <div class="top">
+          <div class="brand">Jack & Jones</div>
+          <span class="tag">تشغيل بالترخيص · أزياء رجالية</span>
+        </div>
+        <div class="body">
+          علامة دنماركية عالمية رائدة في الموضة الرجالية، تدير شركة القارب الصغير حقوق تشغيلها وإدارتها في المملكة العربية السعودية، وتقدّم تشكيلة متكاملة من الملابس الرسمية والكاجوال والرياضية.
+          <ul>
+            <li>الملابس الكاجوال والرسمية والرياضية</li>
+            <li>الإكسسوارات والملابس الخارجية</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vision">
+  <div class="wrap">
+    <div class="vision-block">
+      <div class="vision-badge">رؤية<br>المملكة<br>2030</div>
+      <div>
+        <h2>شريك في تطوير قطاع التجزئة السعودي</h2>
+        <p>تساهم شركة القارب الصغير في تطوير قطاع التجزئة السعودي بما يتماشى مع مستهدفات رؤية المملكة 2030، من خلال الاستثمار في التوسع الإقليمي، وتطوير تجربة العميل، وبناء شراكات موثوقة مع العلامات التجارية العالمية.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brands" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">تواصل معنا</div>
+      <h2>نسعد بالتواصل مع شركائنا وعملائنا</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>الهاتف</h3>
+        <p>أدخل رقم الهاتف هنا</p>
+        <span class="field-note">يرجى تعديل هذه البيانات</span>
+        <h3 style="margin-top:22px">البريد الإلكتروني</h3>
+        <p>info@yourdomain.com</p>
+        <span class="field-note">يرجى تعديل هذه البيانات</span>
+        <h3 style="margin-top:22px">المقر الرئيسي</h3>
+        <p>الرياض، المملكة العربية السعودية</p>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('هذا النموذج تجريبي — لتفعيله فعليًا يلزم ربطه بخدمة إرسال بريد مثل Formspree.');">
+        <input type="text" placeholder="الاسم الكامل" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea rows="4" placeholder="رسالتك"></textarea>
+        <button type="submit">إرسال</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">القارب الصغير <span style="color:#B08D57">Small Boat</span></div>
+    <div class="cols">
+      <div>
+        <h5>الشركة</h5>
+        <a href="#about">من نحن</a>
+        <a href="#brands">علاماتنا التجارية</a>
+        <a href="#contact">تواصل معنا</a>
+      </div>
+      <div>
+        <h5>العلامات</h5>
+        <a href="#brands">ICE CUBE</a>
+        <a href="#brands">Jack & Jones</a>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <span>© <span id="year"></span> شركة القارب الصغير. جميع الحقوق محفوظة.</span>
+    <span>الرياض، المملكة العربية السعودية</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const burger = document.getElementById('burgerBtn');
+  const navList = document.getElementById('navList');
+  burger.addEventListener('click', () => navList.classList.toggle('open'));
+  navList.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navList.classList.remove('open')));
+</script>
+
+</body>
+</html>
