@@ -12,13 +12,18 @@
 <meta name="author" content="شركة القارب الصغير">
 <link rel="canonical" href="https://smallboatcompany.github.io/profile/">
 
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="شركة القارب الصغير | Small Boat Co.">
 <meta property="og:description" content="أكثر من 37 عامًا من الريادة في قطاع الأزياء وتجارة التجزئة بالمملكة العربية السعودية. مالكة ICE CUBE ومشغّل Jack & Jones في السعودية والخليج.">
 <meta property="og:locale" content="ar_SA">
 <meta property="og:url" content="https://smallboatcompany.github.io/profile/">
-<meta property="og:image" content="https://smallboatcompany.github.io/profile/og-image.jpg">
+<meta property="og:image" content="https://smallboatcompany.github.io/profile/assets/logo-square.png">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
@@ -33,7 +38,7 @@
   "name": "شركة القارب الصغير",
   "alternateName": "Small Boat Co.",
   "url": "https://smallboatcompany.github.io/profile/",
-  "logo": "https://smallboatcompany.github.io/profile/logo.png",
+  "logo": "https://smallboatcompany.github.io/profile/assets/logo-square.png",
   "foundingLocation": "الرياض، المملكة العربية السعودية",
   "address": {
     "@type": "PostalAddress",
@@ -50,18 +55,19 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
 
 <style>
   :root{
-    --ink:#1E2233;
-    --navy:#16233F;
-    --paper:#F6F3EC;
-    --paper-2:#EFEADD;
-    --brass:#B08D57;
-    --brass-light:#D9BD8B;
-    --denim:#33456B;
-    --line:#D8D0BE;
+    --ink:#182233;
+    --navy:#0E3557;      /* كحلي عميق مشتق من أزرق الشعار */
+    --blue:#1B6FB1;      /* الأزرق الأساسي من الشعار */
+    --blue-light:#4A93C9;
+    --gold:#F2BE0A;      /* الذهبي/الأصفر من شراع الشعار */
+    --gold-dark:#C99900;
+    --paper:#F7F8FA;
+    --paper-2:#EEF2F6;
+    --line:#DCE3EA;
     --white:#FFFFFF;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
@@ -73,10 +79,11 @@
     line-height:1.75;
     overflow-x:hidden;
   }
-  h1,h2,h3,h4,.brand{
-    font-family:'Cairo', sans-serif;
+  h1,h2,h3,h4{
+    font-family:'Tajawal', sans-serif;
     color:var(--navy);
   }
+  .num-display{ font-family:'Fraunces', serif; }
   a{color:inherit; text-decoration:none;}
   img{max-width:100%; display:block;}
   .wrap{max-width:1180px; margin:0 auto; padding:0 28px;}
@@ -84,37 +91,35 @@
   /* stitched divider — denim-seam motif */
   .stitch{
     height:0;
-    border-top:2px dashed var(--brass);
-    opacity:.55;
+    border-top:2px dashed var(--gold-dark);
+    opacity:.5;
     margin:0 auto;
     width:100%;
   }
-  .stitch.short{width:64px; border-top-width:3px; opacity:1; margin:22px auto;}
 
   /* ===== Header ===== */
   header{
     position:sticky; top:0; z-index:50;
-    background:rgba(246,243,236,.92);
+    background:rgba(247,248,250,.92);
     backdrop-filter:blur(8px);
     border-bottom:1px solid var(--line);
   }
   .nav{
     display:flex; align-items:center; justify-content:space-between;
-    padding:16px 28px; max-width:1180px; margin:0 auto;
+    padding:12px 28px; max-width:1180px; margin:0 auto;
   }
-  .logo{
-    font-family:'Cairo', sans-serif; font-weight:800; font-size:1.15rem;
-    color:var(--navy); letter-spacing:.3px;
-  }
-  .logo span{color:var(--brass);}
+  .logo-brand{display:flex; align-items:center; gap:12px;}
+  .logo-brand img{height:42px; width:auto;}
+  .logo-brand .txt{font-family:'Tajawal', sans-serif; font-weight:800; font-size:1.05rem; color:var(--navy); line-height:1.2;}
+  .logo-brand .txt small{display:block; font-weight:500; font-size:.72rem; color:var(--blue); font-family:'Fraunces', serif;}
   nav ul{list-style:none; display:flex; gap:32px;}
   nav ul li a{
-    font-weight:600; font-size:.95rem; color:var(--navy);
+    font-weight:700; font-size:.95rem; color:var(--navy);
     position:relative; padding-bottom:4px;
   }
   nav ul li a::after{
     content:''; position:absolute; right:0; bottom:0; width:0; height:2px;
-    background:var(--brass); transition:width .25s ease;
+    background:var(--gold); transition:width .25s ease;
   }
   nav ul li a:hover::after{width:100%;}
   .nav-cta{
@@ -140,9 +145,10 @@
   /* ===== Hero ===== */
   .hero{
     position:relative;
-    padding:96px 0 70px;
+    padding:90px 0 64px;
     background:
-      radial-gradient(1100px 480px at 85% -10%, rgba(176,141,87,.16), transparent 60%),
+      radial-gradient(1100px 480px at 85% -10%, rgba(242,190,10,.14), transparent 60%),
+      radial-gradient(700px 380px at -10% 110%, rgba(27,111,177,.10), transparent 60%),
       var(--paper);
     overflow:hidden;
   }
@@ -151,16 +157,16 @@
   }
   .eyebrow{
     display:inline-flex; align-items:center; gap:10px;
-    font-weight:700; font-size:.85rem; color:var(--brass);
+    font-weight:700; font-size:.85rem; color:var(--gold-dark);
     letter-spacing:.5px; margin-bottom:18px;
   }
-  .eyebrow::before{content:''; width:26px; height:2px; background:var(--brass);}
+  .eyebrow::before{content:''; width:26px; height:2px; background:var(--gold-dark);}
   .hero h1{
     font-size:clamp(2.1rem, 4vw, 3.15rem);
     font-weight:900; line-height:1.28; margin-bottom:22px;
   }
   .hero h1 em{
-    font-style:normal; color:var(--brass);
+    font-style:normal; color:var(--blue);
   }
   .hero p.lead{
     font-size:1.08rem; color:#4B5266; max-width:56ch; margin-bottom:34px;
@@ -171,25 +177,26 @@
     font-weight:700; font-size:.95rem; transition:transform .2s ease, box-shadow .2s ease;
   }
   .btn-primary{background:var(--navy); color:var(--paper);}
-  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 10px 24px rgba(22,35,63,.25);}
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 10px 24px rgba(14,53,87,.28);}
   .btn-ghost{border:1.5px solid var(--navy); color:var(--navy);}
   .btn-ghost:hover{background:var(--navy); color:var(--paper);}
 
   .hero-figure{
     position:relative; background:var(--navy); border-radius:22px;
     padding:38px 30px; color:var(--paper);
-    box-shadow:0 30px 60px -20px rgba(22,35,63,.45);
+    box-shadow:0 30px 60px -20px rgba(14,53,87,.5);
   }
+  .hero-figure img.wordmark{height:54px; width:auto; margin-bottom:22px;}
   .hero-figure .big{
-    font-family:'Cairo', sans-serif; font-weight:900; font-size:4.6rem; line-height:1;
-    color:var(--brass-light);
+    font-family:'Fraunces', serif; font-weight:700; font-size:4.6rem; line-height:1;
+    color:var(--gold);
   }
   .hero-figure .cap{font-size:.95rem; opacity:.85; margin-top:6px;}
   .hero-figure .mini-stats{
     margin-top:26px; padding-top:22px; border-top:1px dashed rgba(255,255,255,.25);
     display:grid; grid-template-columns:1fr 1fr; gap:18px;
   }
-  .hero-figure .mini-stats div b{display:block; font-family:'Cairo'; font-size:1.5rem; color:var(--brass-light);}
+  .hero-figure .mini-stats div b{display:block; font-family:'Fraunces',serif; font-size:1.5rem; color:var(--gold);}
   .hero-figure .mini-stats div span{font-size:.82rem; opacity:.8;}
 
   @media(max-width:900px){
@@ -203,7 +210,7 @@
   .statbar .wrap{
     display:grid; grid-template-columns:repeat(4,1fr); gap:20px; text-align:center;
   }
-  .statbar b{display:block; font-family:'Cairo'; font-size:2rem; color:var(--brass-light);}
+  .statbar b{display:block; font-family:'Fraunces', serif; font-size:2rem; color:var(--gold);}
   .statbar span{font-size:.85rem; opacity:.85;}
   @media(max-width:700px){.statbar .wrap{grid-template-columns:1fr 1fr;}}
 
@@ -213,6 +220,7 @@
   .section-head .eyebrow{margin-bottom:14px;}
   .section-head h2{font-size:clamp(1.6rem,2.6vw,2.3rem); font-weight:800; line-height:1.35;}
   .section-head p{color:#5A5F70; margin-top:14px; font-size:1rem;}
+  .section-head.center{margin-left:auto; margin-right:auto; text-align:center;}
 
   /* ===== About ===== */
   .about-grid{
@@ -225,7 +233,7 @@
   }
   .card-soft h3{font-size:1.1rem; margin-bottom:10px; display:flex; align-items:center; gap:10px;}
   .card-soft h3::before{
-    content:''; width:8px; height:8px; border-radius:50%; background:var(--brass);
+    content:''; width:8px; height:8px; border-radius:50%; background:var(--gold-dark);
   }
   .card-soft p{color:#565C6E; font-size:.96rem; margin:0;}
   @media(max-width:820px){.about-grid{grid-template-columns:1fr;}}
@@ -239,7 +247,7 @@
     padding:26px 20px; text-align:right;
   }
   .value .num{
-    font-family:'Cairo'; font-weight:900; color:var(--brass); font-size:1.1rem; margin-bottom:10px; display:block;
+    font-family:'Fraunces',serif; font-weight:700; color:var(--gold-dark); font-size:1.1rem; margin-bottom:10px; display:block;
   }
   .value h4{font-size:1rem; margin-bottom:8px;}
   .value p{font-size:.86rem; color:#5A5F70;}
@@ -257,12 +265,27 @@
   .brand-card .top{
     padding:34px 30px 22px; border-bottom:1px dashed var(--line);
   }
-  .brand-card .brand{font-size:1.5rem; font-weight:800;}
-  .brand-card .tag{font-size:.82rem; color:var(--brass); font-weight:700; margin-top:4px; display:block;}
-  .brand-card .body{padding:22px 30px 30px; color:#4B5266; font-size:.95rem; flex:1;}
+  .brand-card .brand-name{font-family:'Tajawal',sans-serif; font-size:1.5rem; font-weight:800; color:var(--navy);}
+  .brand-card .tag{font-size:.82rem; color:var(--gold-dark); font-weight:700; margin-top:4px; display:block;}
+  .brand-card .body{padding:22px 30px 10px; color:#4B5266; font-size:.95rem;}
   .brand-card .body ul{margin-top:14px; padding-right:18px;}
   .brand-card .body li{margin-bottom:6px; font-size:.92rem;}
+  .brand-stats{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+    margin-top:20px; border-top:1px solid var(--line);
+  }
+  .brand-stats div{
+    text-align:center; padding:20px 8px; border-right:1px solid var(--line);
+  }
+  .brand-stats div:last-child{border-right:none;}
+  .brand-stats b{display:block; font-family:'Fraunces',serif; font-weight:700; font-size:1.5rem; color:var(--blue);}
+  .brand-stats span{font-size:.76rem; color:#6A7080;}
+  .placeholder-note{
+    font-size:.76rem; color:var(--gold-dark); background:rgba(242,190,10,.12);
+    padding:10px 16px; margin:16px 30px 24px; border-radius:8px;
+  }
   @media(max-width:820px){.brand-grid{grid-template-columns:1fr;}}
+  @media(max-width:480px){.brand-stats{grid-template-columns:1fr 1fr;} .brand-stats div{border-bottom:1px solid var(--line);}}
 
   /* ===== Timeline / Vision2030 ===== */
   .vision-block{
@@ -272,9 +295,9 @@
   .vision-block h2{color:var(--paper); font-size:1.7rem; margin-bottom:16px;}
   .vision-block p{color:#C9CEDC; font-size:.98rem;}
   .vision-badge{
-    width:150px; height:150px; border-radius:50%; border:2px dashed var(--brass-light);
+    width:150px; height:150px; border-radius:50%; border:2px dashed var(--gold);
     display:flex; align-items:center; justify-content:center; text-align:center;
-    font-family:'Cairo'; font-weight:800; color:var(--brass-light); font-size:1.15rem; line-height:1.3;
+    font-family:'Tajawal',sans-serif; font-weight:800; color:var(--gold); font-size:1.1rem; line-height:1.3;
     margin:0 auto;
   }
   @media(max-width:820px){.vision-block{grid-template-columns:1fr; padding:40px 26px;}}
@@ -289,8 +312,8 @@
   .contact-card h3{font-size:1rem; margin-bottom:6px;}
   .contact-card p{color:#5A5F70; font-size:.92rem;}
   .field-note{
-    display:inline-block; margin-top:8px; font-size:.78rem; color:var(--brass);
-    background:rgba(176,141,87,.12); padding:4px 10px; border-radius:6px;
+    display:inline-block; margin-top:8px; font-size:.78rem; color:var(--gold-dark);
+    background:rgba(242,190,10,.14); padding:4px 10px; border-radius:6px;
   }
   form{display:grid; gap:14px;}
   form input, form textarea{
@@ -309,10 +332,12 @@
     background:var(--navy); color:#AEB4C4; padding:44px 0 26px; margin-top:40px;
   }
   footer .wrap{
-    display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px; align-items:flex-start;
     border-bottom:1px solid rgba(255,255,255,.12); padding-bottom:24px;
   }
-  footer .brand{color:var(--paper); font-size:1.1rem;}
+  footer .logo-brand img{height:38px;}
+  footer .logo-brand .txt{color:var(--paper);}
+  footer .logo-brand .txt small{color:var(--gold);}
   footer .cols{display:flex; gap:60px; flex-wrap:wrap;}
   footer .cols div h5{color:var(--paper); font-size:.88rem; margin-bottom:10px;}
   footer .cols div a{display:block; font-size:.85rem; margin-bottom:6px; color:#AEB4C4;}
@@ -326,7 +351,10 @@
 
 <header>
   <div class="nav">
-    <div class="logo">القارب الصغير <span>Small Boat</span></div>
+    <a href="#home" class="logo-brand">
+      <img src="assets/logo-icon.png" alt="شعار شركة القارب الصغير">
+      <span class="txt">شركة القارب الصغير<small>Small Boat . co</small></span>
+    </a>
     <button class="burger" id="burgerBtn" aria-label="فتح القائمة">&#9776;</button>
     <ul id="navList">
       <li><a href="#home">الرئيسية</a></li>
@@ -351,6 +379,7 @@
       </div>
     </div>
     <div class="hero-figure">
+      <img class="wordmark" src="assets/logo-icon.png" alt="شعار Small Boat">
       <div class="big">37+</div>
       <div class="cap">عامًا من الخبرة في تجارة التجزئة السعودية</div>
       <div class="mini-stats">
@@ -426,29 +455,34 @@
     <div class="brand-grid">
       <div class="brand-card">
         <div class="top">
-          <div class="brand">ICE CUBE</div>
+          <div class="brand-name">ICE CUBE</div>
           <span class="tag">علامة مملوكة · أزياء نسائية</span>
         </div>
         <div class="body">
           علامة تجارية نسائية سعودية مملوكة بالكامل لشركة القارب الصغير، تقدّم تشكيلات عصرية تواكب أحدث صيحات الموضة النسائية في السوق السعودي والخليجي.
-          <ul>
-            <li>تصميم وتطوير داخلي كامل للتشكيلات</li>
-            <li>حضور واسع ضمن شبكة فروع الشركة</li>
-          </ul>
+        </div>
+        <div class="brand-stats">
+          <div><b>500+</b><span>تصميم</span></div>
+          <div><b>20,000+</b><span>عميلة</span></div>
+          <div><b>30,000+</b><span>طلب منفَّذ</span></div>
+          <div><b>23+</b><span>فرعًا</span></div>
         </div>
       </div>
       <div class="brand-card">
         <div class="top">
-          <div class="brand">Jack & Jones</div>
+          <div class="brand-name">Jack & Jones</div>
           <span class="tag">تشغيل بالترخيص · أزياء رجالية</span>
         </div>
         <div class="body">
           علامة دنماركية عالمية رائدة في الموضة الرجالية، تدير شركة القارب الصغير حقوق تشغيلها وإدارتها في المملكة العربية السعودية، وتقدّم تشكيلة متكاملة من الملابس الرسمية والكاجوال والرياضية.
-          <ul>
-            <li>الملابس الكاجوال والرسمية والرياضية</li>
-            <li>الإكسسوارات والملابس الخارجية</li>
-          </ul>
         </div>
+        <div class="brand-stats">
+          <div><b>—</b><span>تصميم</span></div>
+          <div><b>—</b><span>عميل</span></div>
+          <div><b>—</b><span>طلب منفَّذ</span></div>
+          <div><b>—</b><span>فرعًا</span></div>
+        </div>
+        <div class="placeholder-note">أرسل لي أرقام إنجازات Jack & Jones الفعلية وأحدّثها هنا فورًا (نفس شكل ICE CUBE).</div>
       </div>
     </div>
   </div>
@@ -495,7 +529,10 @@
 
 <footer>
   <div class="wrap">
-    <div class="brand">القارب الصغير <span style="color:#B08D57">Small Boat</span></div>
+    <a href="#home" class="logo-brand">
+      <img src="assets/logo-icon.png" alt="شعار شركة القارب الصغير">
+      <span class="txt">شركة القارب الصغير<small>Small Boat . co</small></span>
+    </a>
     <div class="cols">
       <div>
         <h5>الشركة</h5>
